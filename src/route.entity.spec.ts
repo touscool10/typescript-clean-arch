@@ -18,14 +18,14 @@ describe('Route Tests', () => {
             startPosition: {lat: 0, lng: 1},
             endPosition: {lat: 2, lng: 3},
             points: [
-                {lat: 10, lng: 11}
+                {lat: 10, lng: 12}
             ]
         }
 
         route = new Route(routeProps);
         expect(route.props).toStrictEqual({
             ...routeProps, points: [
-                {lat: 10, lng: 11}
+                {lat: 10, lng: 12}
                 ]
         });
     });
