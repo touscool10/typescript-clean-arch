@@ -88,4 +88,5 @@ describe('Route Tests', () => {
     expect(route.props.points).toHaveLength(2);
 
     });
+
 });

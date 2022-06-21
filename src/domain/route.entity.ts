@@ -65,5 +65,9 @@ export class Route{
     get points(){
         return this.props.points; 
     }
+
+    toJSON() {
+        return this.props;
+    }
 }
 
