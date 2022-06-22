@@ -13,14 +13,16 @@ describe("CreateRouteUseCase Test", () => {
        }
       
        const output = await createRouteUseCase.execute(routeProps);
+       expect(repo.items).toHaveLength(1);
 
        expect(output).toStrictEqual({
+        id: repo.items[0].id,
         title: 'minha rota',
         startPosition: {lat: 0, lng: 1},
         endPosition: {lat: 2, lng: 3},
         points: []
    });
-       expect(repo.items).toHaveLength(1);
+
     });
 
 });

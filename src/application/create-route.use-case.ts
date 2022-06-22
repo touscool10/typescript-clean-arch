@@ -23,10 +23,12 @@ type CreateRouteInput = {
 }
 
 type CreateRouteOutput = {
+    id: string;
     title: string;
     startPosition: LatLng;
     endPosition: LatLng;
     paths?: LatLng[];
+
 }
 
-//S             OLID
+//S O L I D
