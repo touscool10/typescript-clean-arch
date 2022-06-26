@@ -1,0 +1,4 @@
+Comando para verificar política: Get-ExecutionPolicy
+Comando para mudar a política: Set-ExecutionPolicy Unrestricted
+Para voltar para para o padrão: Set-ExecutionPolicy restricted
+Post no Blog: https://www.servti.com/2020/02/18/com...
