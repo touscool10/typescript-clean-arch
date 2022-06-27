@@ -8,7 +8,7 @@ describe('Route Tests', () => {
             endPosition: {lat: 2, lng: 3},
        }
 
-       let route = new Route(routeProps);
+       let route = Route.create(routeProps);
        expect(route.id).toBeDefined();
        expect(route.props).toStrictEqual({
         ...routeProps, points: []
@@ -23,7 +23,7 @@ describe('Route Tests', () => {
             ]
         }
 
-        route = new Route(routeProps);
+        route = Route.create(routeProps);
         expect(route.props).toStrictEqual({
             ...routeProps, points: [
                 {lat: 10, lng: 12}
@@ -38,7 +38,7 @@ describe('Route Tests', () => {
             startPosition: {lat: 0, lng: 1},
             endPosition: {lat: 2, lng: 3},
     }
-    const route = new Route(routeProps);
+    const route = Route.create(routeProps);
     route.updateTitle('title updated');
     expect(route.props.title).toBe('title updated');
     });
@@ -50,7 +50,7 @@ describe('Route Tests', () => {
             startPosition: {lat: 0, lng: 1},
             endPosition: {lat: 2, lng: 3},
     }
-    const route = new Route(routeProps);
+    const route = Route.create(routeProps);
     const startPosition: LatLng = {lat: 223, lng: 225};
     const endPosition: LatLng = {lat: 22, lng: 29};
     const points: LatLng[] = [
@@ -77,7 +77,7 @@ describe('Route Tests', () => {
                 {lat: 0, lng: 3}
             ]
     }
-    const route = new Route(routeProps);
+    const route = Route.create(routeProps);
 
     const newPoints: LatLng[] = [
         {lat: 223, lng: 225},

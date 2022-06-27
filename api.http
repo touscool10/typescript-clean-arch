@@ -11,7 +11,7 @@ Content-Type: application/json
     "startPosition": { "lat": 0, "lng": 1 },
     "endPosition": { "lat": 455, "lng": 344 },
     "points": [
-            { "lat": 455, "lng": 3 },
-            { "lat": 45005, "lng": 3523 }
+            { "lat": 1548, "lng": 8888 },
+            { "lat": 500, "lng": 5023 }
         ]
 }

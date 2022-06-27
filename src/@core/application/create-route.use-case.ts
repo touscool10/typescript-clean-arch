@@ -9,7 +9,7 @@ export class CreateRouteUseCase{
     }
     
     async execute(input: CreateRouteInput): Promise<CreateRouteOutput> {
-        const route = new Route(input);
+        const route = Route.create(input);
         await this.routeRepo.insert(route);
         return route.toJSON() ;
     }
