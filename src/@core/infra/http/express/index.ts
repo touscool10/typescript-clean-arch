@@ -1,5 +1,5 @@
 import { ListAllRoutesUseCase } from './../../../application/list-all-routes.use-case';
-import { RouteInMemoryRepository } from './../../db/route-in-memory.repository';
+import { RouteInMemoryRepository } from '../../db/in-memory/route-in-memory.repository';
 import { CreateRouteUseCase } from './../../../application/create-route.use-case';
 import express, {Express, Request, Response} from "express";
 
